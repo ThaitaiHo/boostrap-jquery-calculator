@@ -1,0 +1,81 @@
+* {
+  font-weight: 600;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.container{
+  background-color: gainsboro;
+  width: 330px;
+  height: 500px; 
+}
+
+.caculator{
+  height: 450px;
+  margin: 45px 5px;
+  padding: 30px 30px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #bbb5b5,
+              -5px -5px 10px #ffff;
+}
+
+#display {
+  width: inherit;
+  text-align: right;
+  color: black;
+  border: none;
+  padding: 15px;
+  margin: 20px auto;
+  background: transparent;
+  box-shadow: 5px 5px 10px #bbb5b5 inset,
+              -5px -5px 10px #ffff inset;
+}
+
+button[class*="button"] {
+  background-color: gainsboro;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #bbb5b5,
+              -5px -5px 10px #ffff;
+  margin: 10px 0 0 10px;
+}
+
+button[class*="button"]:active {
+  box-shadow:  1px 1px 2px #bbb5b5 inset, 
+               -1px -1px 2px #fff inset;
+}
+
+button[class*="button"]:focus {
+  outline: none;
+}
+
+button[class$="op"] {
+  color: white;
+  background-color: black;
+}
+
+button[class$="clear"] {
+  color: white;
+  background-color: red;
+}
+
+@media (max-width: 576px) {
+  .container{
+    width: 200px;
+    height: 700px;
+  }
+
+  .caculator{
+    height: 650px;
+  }
+}
+
